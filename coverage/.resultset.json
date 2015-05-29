@@ -12,6 +12,8 @@
       "/Users/Ronan/Code/MeusPedidos/ucandidate-api/app/controllers/api/v1/candidates_controller.rb": [
         1,
         1,
+        1,
+        1,
         null,
         null,
         null,
@@ -41,6 +43,8 @@
         null,
         1,
         4,
+        null,
+        null,
         null,
         null
       ],
@@ -82,6 +86,6 @@
         null
       ]
     },
-    "timestamp": 1432938734
+    "timestamp": 1432940042
   }
 }
