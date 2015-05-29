@@ -30,7 +30,7 @@ module Api
 
         # Never trust parameters from the scary internet, only allow the white list through.
         def candidate_params
-          params.require(:candidate).permit(:name, :email)
+          params.require(:candidate).permit(:name, :email, knowledges_attributes: [:item, :level])
         end
     end
   end

@@ -6,4 +6,13 @@ class Candidate
   field :email, type: String
 
   validates :name, :email, presence: true
+
+  embeds_many :knowledges
+
+  def knowledges_attributes= data
+    data.each do |attributes|
+      knowledge = Knowledge.new(attributes)
+      knowledge.candidate = self
+    end
+  end
 end
