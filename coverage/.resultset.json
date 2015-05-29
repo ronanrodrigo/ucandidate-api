@@ -9,69 +9,30 @@
         null,
         null
       ],
-      "/Users/Ronan/Code/MeusPedidos/ucandidate-api/app/controllers/api/v1/candidates_controller.rb": [
+      "/Users/Ronan/Code/MeusPedidos/ucandidate-api/spec/factories/knowledges.rb": [
         1,
         1,
         1,
         1,
         null,
         null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        4,
-        null,
-        4,
-        4,
-        6,
-        null,
-        2,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
         1,
         1,
-        null,
-        null,
-        null,
         1,
-        4,
-        null,
         null,
         null,
         null
       ],
-      "/Users/Ronan/Code/MeusPedidos/ucandidate-api/app/controllers/application_controller.rb": [
+      "/Users/Ronan/Code/MeusPedidos/ucandidate-api/app/models/knowledge.rb": [
         1,
         1,
-        1,
-        1,
-        null
-      ],
-      "/Users/Ronan/Code/MeusPedidos/ucandidate-api/spec/models/candidate_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        2,
-        null,
         null,
         1,
         1,
         null,
-        null,
-        1,
-        1,
-        1,
         1,
         null,
+        1,
         null
       ],
       "/Users/Ronan/Code/MeusPedidos/ucandidate-api/app/models/candidate.rb": [
@@ -83,9 +44,18 @@
         1,
         null,
         1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1432940042
+    "timestamp": 1432942164
   }
 }
