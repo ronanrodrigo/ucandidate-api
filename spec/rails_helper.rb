@@ -11,6 +11,7 @@ require 'support/controller_macros'
 SimpleCov.start
 
 RSpec.configure do |config|
+  config.render_views = true
   config.infer_spec_type_from_file_location!
   FactoryGirl.find_definitions
   config.include FactoryGirl::Syntax::Methods
