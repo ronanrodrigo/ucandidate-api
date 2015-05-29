@@ -14,4 +14,10 @@ RSpec.describe Candidate, type: :model do
     @candidate.name = nil
     expect(@candidate.save).to be false
   end
+
+  it "expect Candidate has knowledges" do
+    knowledge = build(:knowledge, candidate: @candidate)
+    @candidate.save
+    expect(@candidate.knowledges.count).to eq 1
+  end
 end

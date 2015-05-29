@@ -7,7 +7,7 @@ module Api
       headers
 
       let(:valid_attributes) {
-        attributes_for(:candidate)
+        attributes_for(:candidate, knowledges_attributes: [attributes_for(:knowledge)])
       }
 
       let(:invalid_attributes) {
