@@ -15,4 +15,17 @@ class Candidate
       knowledge.candidate = self if knowledge.valid?
     end
   end
+
+  def vacancies
+    front_end = [/html/i, /css/i, /javascript/i]
+    back_end = [/python/i, /django/i]
+    mobile = [/desenvolvimento ios/i, /desenvolvimento android/i]
+    vacancies = []
+    vacancies << "front_end" if self.knowledges.where(:level.gte => 7).in(item: front_end).count == front_end.size
+    vacancies << "back_end" if self.knowledges.where(:level.gte => 7).in(item: back_end).count == back_end.size
+    vacancies << "mobile" if self.knowledges.where(:level.gte => 7).in(item: mobile).count == mobile.size
+    vacancies << "generic" if vacancies.blank?
+
+    return vacancies
+  end
 end
