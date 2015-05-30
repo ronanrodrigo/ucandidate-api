@@ -1,2 +1,11 @@
 pt-BR:
   ucandidate: "uCandidate"
+  candidate:
+    vacancy:
+      front_end: "programador(a) Front-End"
+      back_end: "programador(a) Back-End"
+      mobile: "programador(a) Mobile"
+      generic: "programador(a)"
+  candidate_mailer:
+    thanks:
+      subject: "Obrigado por se candidatar"
