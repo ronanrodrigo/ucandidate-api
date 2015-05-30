@@ -12,7 +12,7 @@ class Candidate
   def knowledges_attributes= data
     data.each do |attributes|
       knowledge = Knowledge.new(attributes)
-      knowledge.candidate = self
+      knowledge.candidate = self if knowledge.valid?
     end
   end
 end

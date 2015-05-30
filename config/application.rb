@@ -28,5 +28,11 @@ module UcandidateApi
 
     config.i18n.default_locale = "pt-BR"
 
+    config.middleware.insert_before 0, "Rack::Cors" do
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :post, :options]
+      end
+    end
   end
 end

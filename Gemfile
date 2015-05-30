@@ -7,6 +7,7 @@ gem 'puma',                 '~> 2.11.0'
 gem 'mongoid',              '~> 4.0.2'
 gem 'responders',           '~> 2.1.0'
 gem 'coveralls', require: false
+gem 'rack-cors', :require => 'rack/cors'
 
 group :test do
   gem 'rspec-rails',        '~> 3.2.0'
