@@ -15,6 +15,7 @@ module Api
 
         respond_to do |format|
           if @candidate.save
+            @candidate.vacancies.each { |vacancy| CandidateMailer.thanks(@candidate, vacancy).deliver_now }
             format.json { render :show, status: :created, location: api_candidate_path(@candidate) }
           else
             format.json { render json: @candidate.errors, status: :unprocessable_entity }
