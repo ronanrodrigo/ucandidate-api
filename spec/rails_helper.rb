@@ -7,7 +7,9 @@ require 'rspec/rails'
 require 'factory_girl'
 require 'simplecov'
 require 'support/controller_macros'
+require 'coveralls'
 
+Coveralls.wear!
 SimpleCov.start
 
 RSpec.configure do |config|

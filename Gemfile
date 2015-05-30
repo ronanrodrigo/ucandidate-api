@@ -6,6 +6,7 @@ gem 'sdoc',                 '~> 0.4.0', group: :doc
 gem 'puma',                 '~> 2.11.0'
 gem 'mongoid',              '~> 4.0.2'
 gem 'responders',           '~> 2.1.0'
+gem 'coveralls', require: false
 
 group :test do
   gem 'rspec-rails',        '~> 3.2.0'
