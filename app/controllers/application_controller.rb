@@ -6,5 +6,6 @@ class ApplicationController < ActionController::Base
 
   def set_access
     @response.headers["Access-Control-Allow-Origin"] = "*"
+    @response.headers["Access-Control-Request-Method"] = "*"
   end
 end
